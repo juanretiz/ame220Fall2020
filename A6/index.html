@@ -52,13 +52,13 @@ function goToCurrentSlide(){
   var i = 0;
   while(i < allImgObjs.length){
     if(i == (currentSlide - 1)){
-      allImgObjs[i].style.marginLeft = "0%"
+      allImgObjs[i].style.opacity = "100%"
     }
     else if(i < (currentSlide - 1)){
-      allImgObjs[i].style.marginLeft = "-100%";
+      allImgObjs[i].style.opacity = "0%";
     }
     else{
-      allImgObjs[i].style.marginLeft = "100%";
+      allImgObjs[i].style.opacity = "0%";
     }
     i = i + 1;
   }
